@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../resources/assets_manager.dart';
-import '../../resources/colores_manager.dart';
+import '../../resources/colors_manager.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
