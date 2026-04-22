@@ -10,7 +10,7 @@ class Onboarding3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: ColorsManager.black,
       body: Stack(
         children: [
           Container(
@@ -51,7 +51,7 @@ class Onboarding3 extends StatelessWidget {
                   topLeft: Radius.circular(34),
                   topRight: Radius.circular(34),
                 ),
-                border: Border.all(color: Colors.white10),
+                border: Border.all(color: ColorsManager.white),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -59,7 +59,7 @@ class Onboarding3 extends StatelessWidget {
                   const Text(
                     "Explore All Genres",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: ColorsManager.white,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
@@ -68,7 +68,7 @@ class Onboarding3 extends StatelessWidget {
                   Text(
                     "Discover movies from every genre, in all available qualities. Find something new and exciting to watch every day.",
                     style: TextStyle(
-                      color: Colors.white.withAlpha(180),
+                      color: ColorsManager.white.withAlpha(180),
                       fontSize: 15,
                       height: 1.5,
                     ),

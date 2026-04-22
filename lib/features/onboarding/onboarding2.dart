@@ -10,7 +10,7 @@ class Onboarding2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: ColorsManager.black,
       body: Stack(
         children: [
           Container(
@@ -51,7 +51,7 @@ class Onboarding2 extends StatelessWidget {
                   topLeft: Radius.circular(34),
                   topRight: Radius.circular(34),
                 ),
-                border: Border.all(color: Colors.white10),
+                border: Border.all(color: ColorsManager.white),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
