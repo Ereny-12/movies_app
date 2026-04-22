@@ -14,13 +14,14 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+    AppRouter appRouter = AppRouter();
     return ScreenUtilInit(
         designSize: Size(430, 932),
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (context,child)=> MaterialApp( debugShowCheckedModeBanner: false,
-          routes:RoutesManagers.routes ,
-          initialRoute:RoutesManagers.login)
+            onGenerateRoute: appRouter.generateRoute ,
+          initialRoute: AppRouter.register,)
     );
   }
 }
