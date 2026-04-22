@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/resources/assets_manager.dart';
-
-import '../../resources/colors_manager.dart';
-import 'elevated_button.dart';
+import '../../core/resources/assets_manager.dart';
+import '../../core/resources/colors_manager.dart';
+import '../../core/shared_widgets/elevated_button.dart';
 import 'onboarding3.dart';
 
 class Onboarding2 extends StatelessWidget {
@@ -79,14 +78,13 @@ class Onboarding2 extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     height: 56,
-                    child: NextButton(
-                      text: "Next",
-                      onPressed: () {
-                        Navigator.push(
+                    child: CustomElevatedButton(
+                      text: "Next", onPress: () {
+                      Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const Onboarding3()),
-                        );
-                      },
+                          MaterialPageRoute(builder: (context) => const Onboarding3()));
+                    },
+
                     ),
                   ),
                 ],

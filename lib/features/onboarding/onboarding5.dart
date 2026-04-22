@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:movies_app/resources/assets_manager.dart';
+import '../../core/resources/assets_manager.dart';
+import '../../core/resources/colors_manager.dart';
+import '../../core/shared_widgets/elevated_button.dart';
 
-import '../../resources/colors_manager.dart';
-import 'elevated_button.dart';
 
 class Onboarding5 extends StatelessWidget {
   const Onboarding5({super.key});
@@ -10,7 +10,7 @@ class Onboarding5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: ColorsManager.black,
       body: Stack(
         children: [
           Container(
@@ -50,7 +50,7 @@ class Onboarding5 extends StatelessWidget {
                   topLeft: Radius.circular(34),
                   topRight: Radius.circular(34),
                 ),
-                border: Border.all(color: Colors.white10),
+                border: Border.all(color: ColorsManager.white),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -58,7 +58,7 @@ class Onboarding5 extends StatelessWidget {
                   const Text(
                     "Start Watching Now",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: ColorsManager.white,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
@@ -67,20 +67,21 @@ class Onboarding5 extends StatelessWidget {
                   const SizedBox(height: 32),
                   Column(
                     children: [
-                      NextButton(
-                        text: "Finish",
-                        onPressed: () {
+                      CustomElevatedButton(
+                        text: "Finish", onPress: () {
 
-                        },
+                      },
                       ),
                       const SizedBox(height: 12),
-
-                      BackButtonCustom(
-                        text: "Back",
-                        onPressed: () {
+                      CustomElevatedButton(
+                        text: 'Back',
+                        backgroundColor: Colors.transparent,
+                        textColor: ColorsManager.yellow,
+                        borderColor: ColorsManager.yellow,
+                        onPress: () {
                           Navigator.pop(context);
                         },
-                      ),
+                      )
                     ],
                   )
                 ],

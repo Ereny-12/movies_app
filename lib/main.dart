@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'core/resources/routes/routes_manager.dart';
 
-import 'package:movies_app/resources/routes/routes_manager.dart';
-
-import 'features/onboarding/onboarding2.dart';
 
 
 
@@ -22,7 +20,7 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context,child)=> MaterialApp( debugShowCheckedModeBanner: false,
           routes:RoutesManagers.routes ,
-          initialRoute:RoutesManagers.onBoarding1)
+          initialRoute:RoutesManagers.login)
     );
   }
 }
