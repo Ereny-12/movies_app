@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movies_app/features/login/forget_password/forget_password.dart';
 import 'package:movies_app/features/register/register.dart';
 import '../../../features/login/login.dart';
 import '../../../features/onboarding/onboarding1.dart';
@@ -11,6 +12,7 @@ class AppRouter {
   static const String splash = "/splash";
   static const String login = "/login";
   static const String register = "/register";
+  static const String forget_password = "/forget_password";
   static const String onBoarding1 = "/onBoarding1";
   static const String onBoarding2 = "/onBoarding2";
   static const String onBoarding3 = "/onBoarding3";
@@ -27,6 +29,8 @@ class AppRouter {
       case register:
         return MaterialPageRoute(builder: (_)=> const Register());
 
+      case forget_password:
+        return  MaterialPageRoute(builder: (_)=> const ForgetPassword());
       case onBoarding1:
         return MaterialPageRoute(builder: (_) => const Onboarding1());
 

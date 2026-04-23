@@ -10,5 +10,6 @@ class ImageAssets {
   static const String gamer1 = "$base/gamer 1.png";
   static const String gamer2 = "$base/gamer2.png";
   static const String gamer3 = "$base/gamer3.png";
+  static const String character = "$base/Character.png";
 
 }
