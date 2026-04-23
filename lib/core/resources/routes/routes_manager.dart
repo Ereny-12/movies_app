@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/features/login/forget_password/forget_password.dart';
+import 'package:movies_app/features/profile/update_profile.dart';
 import 'package:movies_app/features/register/register.dart';
 import 'package:movies_app/features/search_screen/search_screen.dart';
 import '../../../features/login/login.dart';
@@ -17,6 +18,7 @@ class AppRouter {
   static const String forget_password = "/forget_password";
   static const String movieHome = "/MovieHome";
   static const String searchScreen = "/searchScreen";
+  static const String updateProfile = "/updateProfile";
   static const String onBoarding1 = "/onBoarding1";
   static const String onBoarding2 = "/onBoarding2";
   static const String onBoarding3 = "/onBoarding3";
@@ -41,6 +43,9 @@ class AppRouter {
 
       case searchScreen:
         return MaterialPageRoute(builder: (_)=> SearchScreen());
+
+      case updateProfile:
+        return MaterialPageRoute(builder: (_)=> UpdateProfile());
       case onBoarding1:
         return MaterialPageRoute(builder: (_) => const Onboarding1());
 
