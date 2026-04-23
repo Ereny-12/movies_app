@@ -12,6 +12,7 @@ class UpdateProfile extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: ColorsManager.black,
       appBar:_buildAppBar (),
